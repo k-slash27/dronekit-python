@@ -1,3 +1,25 @@
+# Original Scripts
+## exam.py
+### 概要
+終了課題Bのために作成
+MissionPlanner etc. GCSで作成したフライトプランを読み込んで実行する
+**前提条件：**
+- フライトプラン0番目が、　`HOME` コマンドであること
+- フライトプラン1番目が、 `Takeoff` コマンドであること
+- フライトプランのファイル形式が `.txt` であること
+
+### 実行方法
+以下コマンドでSITLを起動
+```
+$ cd ardupilot/Tools/autotest
+$ ./sim_vehicle.py -v ArduCopter --map --console -L Kawachi
+```
+以下コマンドでexam.pyを実行
+```
+$ cd ardupilot/dronekit-python
+$ python ./exam.py
+```
+
 # DroneKit Python
 
 ![dronekit_python_logo](https://cloud.githubusercontent.com/assets/5368500/10805537/90dd4b14-7e22-11e5-9592-5925348a7df9.png)
